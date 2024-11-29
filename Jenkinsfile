@@ -6,9 +6,9 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repository') {
+        stage('Hello world') {
             steps {
-                git 'https://github.com/your-username/react-jenkins-test.git'
+                sh "echo Hello world"
             }
         }
 
