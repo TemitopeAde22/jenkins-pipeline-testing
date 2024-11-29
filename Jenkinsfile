@@ -11,6 +11,14 @@ pipeline {
                 sh "echo Hello world"
             }
         }
+        stage('Install Node.js') {
+    steps {
+        sh '''
+            curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
+            apt-get install -y nodejs
+        '''
+    }
+}
 
         stage('Install Dependencies') {
             steps {
