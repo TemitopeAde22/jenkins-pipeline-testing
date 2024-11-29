@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs "Nodejs" // Ensure Node.js is configured in Jenkins
+        nodejs "Nodejs_12.22.9" // Ensure Node.js is configured in Jenkins
     }
 
     stages {
